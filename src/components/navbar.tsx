@@ -2,9 +2,8 @@
 
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle";
 import { useState } from "react";
-import { ThemeSwitcher } from "./theme-switcher-1";
+import ThemeToggle from "./theme-switcher-1";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -70,7 +69,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-1 sm:space-x-2">
             {/* Theme Toggle */}
             <div className="p-0.5 sm:p-1">
-              <ThemeSwitcher />
+              <ThemeToggle />
             </div>
 
             {/* Authentication - Desktop */}
