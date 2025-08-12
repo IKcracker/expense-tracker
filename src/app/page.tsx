@@ -4,7 +4,7 @@ import ExpenseStats from "@/components/expenseStats";
 
 import Guest from "@/components/guest";
 import RecordChart from "@/components/RecordChart";
-// import RecordHistory from "@/components/RecordHistory";
+import RecordHistory from "@/components/RecordHistory";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
 
@@ -94,7 +94,7 @@ export default async function HomePage() {
         {/* Full-width sections below - mobile-friendly spacing */}
         <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-6">
           <AIInsights />
-          {/*<RecordHistory /> */}
+          <RecordHistory />
         </div>
       </div>
     </main>
