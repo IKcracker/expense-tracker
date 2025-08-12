@@ -65,6 +65,7 @@ export async function generateExpenseInsights(
     3. Money-saving opportunities
     4. Positive reinforcement for good habits
 
+    Always use South African Rand (R) for all currency values, not dollars or any other currency. If you mention amounts, use the "R" symbol and format like "R120.00".
     Return only valid JSON array, no additional text.`;
 
     const completion = await openai.chat.completions.create({
@@ -198,7 +199,7 @@ export async function generateAIAnswer(
     2. Uses concrete data from the expenses when possible
     3. Offers actionable advice
     4. Keeps the response concise but informative (2-3 sentences)
-    
+    5. Always use South African Rand (R) for all currency values, not dollars or any other currency. If you mention amounts, use the "R" symbol and format like "R120.00".
     Return only the answer text, no additional formatting.`;
 
     const completion = await openai.chat.completions.create({
@@ -226,6 +227,6 @@ export async function generateAIAnswer(
     return response.trim();
   } catch (error) {
     console.error("❌ Error generating AI answer:", error);
-    return "I'm unable to provide a detailed answer at the moment. Please try refreshing the insights or check your connection.";
+    return "I'm unable to provide a detailed answer at the moment. Please try refreshing the insights or check your internet connection.";
   }
 }

@@ -1,6 +1,6 @@
 import AddNewRecord from "@/components/addNewRecord";
+import AIInsights from "@/components/AIInsights";
 import ExpenseStats from "@/components/expenseStats";
-// import AIInsights from "@/components/AIInsights";
 
 import Guest from "@/components/guest";
 import RecordChart from "@/components/RecordChart";
@@ -93,8 +93,8 @@ export default async function HomePage() {
 
         {/* Full-width sections below - mobile-friendly spacing */}
         <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-6">
-          {/* <AIInsights />
-          <RecordHistory /> */}
+          <AIInsights />
+          {/*<RecordHistory /> */}
         </div>
       </div>
     </main>
