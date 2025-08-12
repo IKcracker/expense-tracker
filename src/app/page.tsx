@@ -2,7 +2,7 @@ import AddNewRecord from "@/components/addNewRecord";
 // import AIInsights from "@/components/AIInsights";
 // import ExpenseStats from "@/components/expenseStats";
 import Guest from "@/components/guest";
-// import RecordChart from "@/components/RecordChart";
+import RecordChart from "@/components/RecordChart";
 // import RecordHistory from "@/components/RecordHistory";
 import { currentUser } from "@clerk/nextjs/server";
 import Image from "next/image";
@@ -85,8 +85,8 @@ export default async function HomePage() {
 
           <div className="space-y-4 sm:space-y-6">
             {/* Expense Analytics */}
-            {/* <RecordChart />
-            <ExpenseStats /> */}
+            <RecordChart />
+            {/*<ExpenseStats /> */}
           </div>
         </div>
 
